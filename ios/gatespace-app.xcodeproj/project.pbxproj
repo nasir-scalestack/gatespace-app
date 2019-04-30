@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		014BCD19CDE448C795AE653A /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F595BD4A7AD54E019F2C0CD1 /* MaterialCommunityIcons.ttf */; };
+		08D0AA8196634A48ACE3CF04 /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A499207125340F8863FDE4C /* Roboto.ttf */; };
+		0D4B76874D8A47399B18E04E /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9301CDB959F143F685AA57B5 /* SimpleLineIcons.ttf */; };
+		1A54ED9E4C2149E681C045C6 /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A272E7B7443461E86475168 /* Roboto_medium.ttf */; };
+		23C41E6C6A834488ACDF3333 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AEEEEB44B8456D80E5054C /* Foundation.ttf */; };
+		2823FB03E6EC48DB9C8D6099 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 748207404A334BE4B03AD9D4 /* Entypo.ttf */; };
+		2A671F182277D82600E1F9EE /* ESSBeaconScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A671F112277D81C00E1F9EE /* ESSBeaconScanner.m */; };
+		2A671F192277D82600E1F9EE /* RNiBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A671F132277D81E00E1F9EE /* RNiBeacon.m */; };
+		2A671F1A2277D82600E1F9EE /* ESSTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A671F142277D81E00E1F9EE /* ESSTimer.m */; };
+		2A671F1B2277D82600E1F9EE /* ESSEddystone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A671F172277D82500E1F9EE /* ESSEddystone.m */; };
+		2FDA8EDE254A470BBBEACF08 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5308A6A523E47C193810129 /* Zocial.ttf */; };
+		44089470DB4744168265B10D /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4EBD9A9AD95444E98DAAD9C /* FontAwesome5_Brands.ttf */; };
+		7037B4BCF06443878550DC49 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22F22556CBCB4BCFAF71EAD9 /* FontAwesome.ttf */; };
+		70E00563AA13467CBAEA4995 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88393633176546DFAC225996 /* MaterialIcons.ttf */; };
+		7E3FB26E4DFF4DCDA67619FC /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48F5A343C9F245DF937578BD /* AntDesign.ttf */; };
+		8452D7EB684B4BC0B8742D3E /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC1E65653FBF4329A077B931 /* Octicons.ttf */; };
+		8FCEA58075A94451915C15D7 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A7A6D2BBE341569EDA36FF /* Ionicons.ttf */; };
+		9A2913F764B943B39EC43720 /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17B69769F253474591E0CA66 /* rubicon-icon-font.ttf */; };
 		B501732B1DC01252003445D9 /* EXShell.plist in Resources */ = {isa = PBXBuildFile; fileRef = B501732A1DC01252003445D9 /* EXShell.plist */; };
 		B56386491DB9693800A0598C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B56386481DB9693800A0598C /* AppDelegate.m */; };
 		B56386511DB9693800A0598C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56386501DB9693800A0598C /* Assets.xcassets */; };
@@ -18,12 +36,38 @@
 		B5CFBF4F1EDE419400B4BE24 /* EXBuildConstants.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5CFBF4E1EDE419400B4BE24 /* EXBuildConstants.plist */; };
 		B5DB04801F3A684600E91581 /* shell-app-manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = B5DB047E1F3A684600E91581 /* shell-app-manifest.json */; };
 		B5DB04811F3A684600E91581 /* shell-app.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5DB047F1F3A684600E91581 /* shell-app.bundle */; };
+		BF78FDCEC6B94CC885CE3410 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32B6A6A719EA4CF786C15B57 /* Feather.ttf */; };
+		D6CFAE7486CB4F16A99A6180 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF34F77FAE6F4C74A03AA71E /* FontAwesome5_Regular.ttf */; };
+		E8B75B1343A14DF09AF568B8 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA35809264E04C1CB3C8B622 /* FontAwesome5_Solid.ttf */; };
 		EBB8117C1BFA0514F79CAF74 /* libPods-gatespace-app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A88D15726AD99E8A257BC7 /* libPods-gatespace-app.a */; };
+		F0194D1DCB36416B82D75440 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9768A4BD39CA448F981C1009 /* EvilIcons.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17B69769F253474591E0CA66 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
+		22F22556CBCB4BCFAF71EAD9 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		2A671F102277D81B00E1F9EE /* ESSTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESSTimer.h; sourceTree = "<group>"; };
+		2A671F112277D81C00E1F9EE /* ESSBeaconScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSBeaconScanner.m; sourceTree = "<group>"; };
+		2A671F122277D81D00E1F9EE /* RNiBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNiBeacon.h; sourceTree = "<group>"; };
+		2A671F132277D81E00E1F9EE /* RNiBeacon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNiBeacon.m; sourceTree = "<group>"; };
+		2A671F142277D81E00E1F9EE /* ESSTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSTimer.m; sourceTree = "<group>"; };
+		2A671F152277D81F00E1F9EE /* ESSEddystone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESSEddystone.h; sourceTree = "<group>"; };
+		2A671F162277D82100E1F9EE /* ESSBeaconScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESSBeaconScanner.h; sourceTree = "<group>"; };
+		2A671F172277D82500E1F9EE /* ESSEddystone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSEddystone.m; sourceTree = "<group>"; };
 		2C1548D9E4CB1AEFA5CCAE6D /* Pods-gatespace-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gatespace-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gatespace-app/Pods-gatespace-app.debug.xcconfig"; sourceTree = "<group>"; };
+		32B6A6A719EA4CF786C15B57 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		3D6B9D449CCB4CE0A0FD81AF /* libRNiBeacon.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNiBeacon.a; sourceTree = "<group>"; };
+		48F5A343C9F245DF937578BD /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/native-base/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		4A499207125340F8863FDE4C /* Roboto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto.ttf; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; };
+		64AEEEEB44B8456D80E5054C /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		748207404A334BE4B03AD9D4 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		7A272E7B7443461E86475168 /* Roboto_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto_medium.ttf; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; };
+		88393633176546DFAC225996 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		9301CDB959F143F685AA57B5 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		95A7A6D2BBE341569EDA36FF /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		9768A4BD39CA448F981C1009 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		A47FE4D7F70906B7DC8CE39B /* Pods-gatespace-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gatespace-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-gatespace-app/Pods-gatespace-app.release.xcconfig"; sourceTree = "<group>"; };
+		B4EBD9A9AD95444E98DAAD9C /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		B501732A1DC01252003445D9 /* EXShell.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EXShell.plist; sourceTree = "<group>"; };
 		B56386411DB9693800A0598C /* gatespace-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gatespace-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56386471DB9693800A0598C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,6 +83,11 @@
 		B5DB047E1F3A684600E91581 /* shell-app-manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "shell-app-manifest.json"; sourceTree = "<group>"; };
 		B5DB047F1F3A684600E91581 /* shell-app.bundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "shell-app.bundle"; sourceTree = "<group>"; };
 		C4A88D15726AD99E8A257BC7 /* libPods-gatespace-app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gatespace-app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF34F77FAE6F4C74A03AA71E /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		D5308A6A523E47C193810129 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		DA35809264E04C1CB3C8B622 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		EC1E65653FBF4329A077B931 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		F595BD4A7AD54E019F2C0CD1 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +110,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2A671EF92277CFC300E1F9EE /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				3D6B9D449CCB4CE0A0FD81AF /* libRNiBeacon.a */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		2A671F0F2277D7F900E1F9EE /* BeaconManager */ = {
+			isa = PBXGroup;
+			children = (
+				2A671F162277D82100E1F9EE /* ESSBeaconScanner.h */,
+				2A671F112277D81C00E1F9EE /* ESSBeaconScanner.m */,
+				2A671F152277D81F00E1F9EE /* ESSEddystone.h */,
+				2A671F172277D82500E1F9EE /* ESSEddystone.m */,
+				2A671F102277D81B00E1F9EE /* ESSTimer.h */,
+				2A671F142277D81E00E1F9EE /* ESSTimer.m */,
+				2A671F122277D81D00E1F9EE /* RNiBeacon.h */,
+				2A671F132277D81E00E1F9EE /* RNiBeacon.m */,
+			);
+			path = BeaconManager;
+			sourceTree = "<group>";
+		};
 		5B29BC350A332C58878A9F13 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +149,8 @@
 				B56386421DB9693800A0598C /* Products */,
 				5B29BC350A332C58878A9F13 /* Pods */,
 				1A42804E64B7E9E0AB8B6799 /* Frameworks */,
+				EA7DD8FD037949F3AC41BDE8 /* Resources */,
+				2A671EF92277CFC300E1F9EE /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +165,7 @@
 		B56386431DB9693800A0598C /* gatespace-app */ = {
 			isa = PBXGroup;
 			children = (
+				2A671F0F2277D7F900E1F9EE /* BeaconManager */,
 				B56386471DB9693800A0598C /* AppDelegate.h */,
 				B56386481DB9693800A0598C /* AppDelegate.m */,
 				B56386501DB9693800A0598C /* Assets.xcassets */,
@@ -114,6 +189,31 @@
 				B563865E1DB96A5E00A0598C /* main.m */,
 			);
 			path = Supporting;
+			sourceTree = "<group>";
+		};
+		EA7DD8FD037949F3AC41BDE8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				48F5A343C9F245DF937578BD /* AntDesign.ttf */,
+				748207404A334BE4B03AD9D4 /* Entypo.ttf */,
+				9768A4BD39CA448F981C1009 /* EvilIcons.ttf */,
+				32B6A6A719EA4CF786C15B57 /* Feather.ttf */,
+				22F22556CBCB4BCFAF71EAD9 /* FontAwesome.ttf */,
+				B4EBD9A9AD95444E98DAAD9C /* FontAwesome5_Brands.ttf */,
+				CF34F77FAE6F4C74A03AA71E /* FontAwesome5_Regular.ttf */,
+				DA35809264E04C1CB3C8B622 /* FontAwesome5_Solid.ttf */,
+				64AEEEEB44B8456D80E5054C /* Foundation.ttf */,
+				95A7A6D2BBE341569EDA36FF /* Ionicons.ttf */,
+				F595BD4A7AD54E019F2C0CD1 /* MaterialCommunityIcons.ttf */,
+				88393633176546DFAC225996 /* MaterialIcons.ttf */,
+				EC1E65653FBF4329A077B931 /* Octicons.ttf */,
+				7A272E7B7443461E86475168 /* Roboto_medium.ttf */,
+				4A499207125340F8863FDE4C /* Roboto.ttf */,
+				17B69769F253474591E0CA66 /* rubicon-icon-font.ttf */,
+				9301CDB959F143F685AA57B5 /* SimpleLineIcons.ttf */,
+				D5308A6A523E47C193810129 /* Zocial.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +246,7 @@
 		B56386391DB9693800A0598C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 900;
 				ORGANIZATIONNAME = "650 Industries, Inc.";
 				TargetAttributes = {
 					B56386401DB9693800A0598C = {
@@ -188,6 +288,24 @@
 				B5DB04801F3A684600E91581 /* shell-app-manifest.json in Resources */,
 				B5DB04811F3A684600E91581 /* shell-app.bundle in Resources */,
 				B56386511DB9693800A0598C /* Assets.xcassets in Resources */,
+				7E3FB26E4DFF4DCDA67619FC /* AntDesign.ttf in Resources */,
+				2823FB03E6EC48DB9C8D6099 /* Entypo.ttf in Resources */,
+				F0194D1DCB36416B82D75440 /* EvilIcons.ttf in Resources */,
+				BF78FDCEC6B94CC885CE3410 /* Feather.ttf in Resources */,
+				7037B4BCF06443878550DC49 /* FontAwesome.ttf in Resources */,
+				44089470DB4744168265B10D /* FontAwesome5_Brands.ttf in Resources */,
+				D6CFAE7486CB4F16A99A6180 /* FontAwesome5_Regular.ttf in Resources */,
+				E8B75B1343A14DF09AF568B8 /* FontAwesome5_Solid.ttf in Resources */,
+				23C41E6C6A834488ACDF3333 /* Foundation.ttf in Resources */,
+				8FCEA58075A94451915C15D7 /* Ionicons.ttf in Resources */,
+				014BCD19CDE448C795AE653A /* MaterialCommunityIcons.ttf in Resources */,
+				70E00563AA13467CBAEA4995 /* MaterialIcons.ttf in Resources */,
+				8452D7EB684B4BC0B8742D3E /* Octicons.ttf in Resources */,
+				1A54ED9E4C2149E681C045C6 /* Roboto_medium.ttf in Resources */,
+				08D0AA8196634A48ACE3CF04 /* Roboto.ttf in Resources */,
+				9A2913F764B943B39EC43720 /* rubicon-icon-font.ttf in Resources */,
+				0D4B76874D8A47399B18E04E /* SimpleLineIcons.ttf in Resources */,
+				2FDA8EDE254A470BBBEACF08 /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +396,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B56386611DB96A5E00A0598C /* main.m in Sources */,
+				2A671F182277D82600E1F9EE /* ESSBeaconScanner.m in Sources */,
+				2A671F1A2277D82600E1F9EE /* ESSTimer.m in Sources */,
 				B56386491DB9693800A0598C /* AppDelegate.m in Sources */,
+				2A671F192277D82600E1F9EE /* RNiBeacon.m in Sources */,
+				2A671F1B2277D82600E1F9EE /* ESSEddystone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,8 +515,83 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R7JGVRKG2Y;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Amplitude-iOS\"",
+					"\"${PODS_ROOT}/Headers/Public/Analytics\"",
+					"\"${PODS_ROOT}/Headers/Public/AppAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/Bolts\"",
+					"\"${PODS_ROOT}/Headers/Public/Branch\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/Public/Crashlytics\"",
+					"\"${PODS_ROOT}/Headers/Public/DoubleConversion\"",
+					"\"${PODS_ROOT}/Headers/Public/EXAdsAdMob\"",
+					"\"${PODS_ROOT}/Headers/Public/EXAppAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/EXAppLoaderProvider\"",
+					"\"${PODS_ROOT}/Headers/Public/EXBackgroundFetch\"",
+					"\"${PODS_ROOT}/Headers/Public/EXBarCodeScanner\"",
+					"\"${PODS_ROOT}/Headers/Public/EXBarCodeScannerInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/EXCamera\"",
+					"\"${PODS_ROOT}/Headers/Public/EXCameraInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/EXConstants\"",
+					"\"${PODS_ROOT}/Headers/Public/EXConstantsInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/EXContacts\"",
+					"\"${PODS_ROOT}/Headers/Public/EXCore\"",
+					"\"${PODS_ROOT}/Headers/Public/EXErrors\"",
+					"\"${PODS_ROOT}/Headers/Public/EXFaceDetectorInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/EXFileSystem\"",
+					"\"${PODS_ROOT}/Headers/Public/EXFileSystemInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/EXFont\"",
+					"\"${PODS_ROOT}/Headers/Public/EXFontInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/EXGL\"",
+					"\"${PODS_ROOT}/Headers/Public/EXGL-CPP\"",
+					"\"${PODS_ROOT}/Headers/Public/EXGoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/EXImageLoaderInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/EXLocalAuthentication\"",
+					"\"${PODS_ROOT}/Headers/Public/EXLocalization\"",
+					"\"${PODS_ROOT}/Headers/Public/EXLocation\"",
+					"\"${PODS_ROOT}/Headers/Public/EXMediaLibrary\"",
+					"\"${PODS_ROOT}/Headers/Public/EXPermissions\"",
+					"\"${PODS_ROOT}/Headers/Public/EXPermissionsInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/EXPrint\"",
+					"\"${PODS_ROOT}/Headers/Public/EXReactNativeAdapter\"",
+					"\"${PODS_ROOT}/Headers/Public/EXSMS\"",
+					"\"${PODS_ROOT}/Headers/Public/EXSegment\"",
+					"\"${PODS_ROOT}/Headers/Public/EXSensors\"",
+					"\"${PODS_ROOT}/Headers/Public/EXSensorsInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/EXTaskManager\"",
+					"\"${PODS_ROOT}/Headers/Public/EXTaskManagerInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/ExpoKit\"",
+					"\"${PODS_ROOT}/Headers/Public/FBAudienceNetwork\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKCoreKit\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKLoginKit\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKShareKit\"",
+					"\"${PODS_ROOT}/Headers/Public/Fabric\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMSessionFetcher\"",
+					"\"${PODS_ROOT}/Headers/Public/Google-Maps-iOS-Utils\"",
+					"\"${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleMaps\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleToolboxForMac\"",
+					"\"${PODS_ROOT}/Headers/Public/JKBigInteger2\"",
+					"\"${PODS_ROOT}/Headers/Public/React\"",
+					"\"${PODS_ROOT}/Headers/Public/glog\"",
+					"\"${PODS_ROOT}/Headers/Public/lottie-ios\"",
+					"\"${PODS_ROOT}/Headers/Public/yoga\"",
+					"*",
+					"{$SRCROOT}/…/…/ios/Pods/Headers/Public",
+					"*",
+					"{$SRCROOT}/…/…/ios/Pods/Headers/Public",
+					"{$SRCROOT}/…/…/ios/Pods/Headers/Public",
+					"{$SRCROOT}/…/node_modules/react-native-beacons-manager/ios",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/gatespace-app/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.scalestack.gatespace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -407,8 +604,83 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R7JGVRKG2Y;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Amplitude-iOS\"",
+					"\"${PODS_ROOT}/Headers/Public/Analytics\"",
+					"\"${PODS_ROOT}/Headers/Public/AppAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/Bolts\"",
+					"\"${PODS_ROOT}/Headers/Public/Branch\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/Public/Crashlytics\"",
+					"\"${PODS_ROOT}/Headers/Public/DoubleConversion\"",
+					"\"${PODS_ROOT}/Headers/Public/EXAdsAdMob\"",
+					"\"${PODS_ROOT}/Headers/Public/EXAppAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/EXAppLoaderProvider\"",
+					"\"${PODS_ROOT}/Headers/Public/EXBackgroundFetch\"",
+					"\"${PODS_ROOT}/Headers/Public/EXBarCodeScanner\"",
+					"\"${PODS_ROOT}/Headers/Public/EXBarCodeScannerInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/EXCamera\"",
+					"\"${PODS_ROOT}/Headers/Public/EXCameraInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/EXConstants\"",
+					"\"${PODS_ROOT}/Headers/Public/EXConstantsInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/EXContacts\"",
+					"\"${PODS_ROOT}/Headers/Public/EXCore\"",
+					"\"${PODS_ROOT}/Headers/Public/EXErrors\"",
+					"\"${PODS_ROOT}/Headers/Public/EXFaceDetectorInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/EXFileSystem\"",
+					"\"${PODS_ROOT}/Headers/Public/EXFileSystemInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/EXFont\"",
+					"\"${PODS_ROOT}/Headers/Public/EXFontInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/EXGL\"",
+					"\"${PODS_ROOT}/Headers/Public/EXGL-CPP\"",
+					"\"${PODS_ROOT}/Headers/Public/EXGoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/EXImageLoaderInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/EXLocalAuthentication\"",
+					"\"${PODS_ROOT}/Headers/Public/EXLocalization\"",
+					"\"${PODS_ROOT}/Headers/Public/EXLocation\"",
+					"\"${PODS_ROOT}/Headers/Public/EXMediaLibrary\"",
+					"\"${PODS_ROOT}/Headers/Public/EXPermissions\"",
+					"\"${PODS_ROOT}/Headers/Public/EXPermissionsInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/EXPrint\"",
+					"\"${PODS_ROOT}/Headers/Public/EXReactNativeAdapter\"",
+					"\"${PODS_ROOT}/Headers/Public/EXSMS\"",
+					"\"${PODS_ROOT}/Headers/Public/EXSegment\"",
+					"\"${PODS_ROOT}/Headers/Public/EXSensors\"",
+					"\"${PODS_ROOT}/Headers/Public/EXSensorsInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/EXTaskManager\"",
+					"\"${PODS_ROOT}/Headers/Public/EXTaskManagerInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/ExpoKit\"",
+					"\"${PODS_ROOT}/Headers/Public/FBAudienceNetwork\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKCoreKit\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKLoginKit\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKShareKit\"",
+					"\"${PODS_ROOT}/Headers/Public/Fabric\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMSessionFetcher\"",
+					"\"${PODS_ROOT}/Headers/Public/Google-Maps-iOS-Utils\"",
+					"\"${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleMaps\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleToolboxForMac\"",
+					"\"${PODS_ROOT}/Headers/Public/JKBigInteger2\"",
+					"\"${PODS_ROOT}/Headers/Public/React\"",
+					"\"${PODS_ROOT}/Headers/Public/glog\"",
+					"\"${PODS_ROOT}/Headers/Public/lottie-ios\"",
+					"\"${PODS_ROOT}/Headers/Public/yoga\"",
+					"*",
+					"{$SRCROOT}/…/…/ios/Pods/Headers/Public",
+					"*",
+					"{$SRCROOT}/…/…/ios/Pods/Headers/Public",
+					"{$SRCROOT}/…/…/ios/Pods/Headers/Public",
+					"{$SRCROOT}/…/node_modules/react-native-beacons-manager/ios",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/gatespace-app/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.scalestack.gatespace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

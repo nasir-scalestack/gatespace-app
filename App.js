@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { Platform, StatusBar, StyleSheet, View } from 'react-native';
+import { Platform, StatusBar, StyleSheet, View, NativeModules } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
 import * as firebase from 'firebase';
 import AppNavigator from './navigation/AppNavigator';
@@ -22,6 +22,8 @@ export default class App extends React.Component {
       isAuthenticated: false,
       isAuthenticationReady: false,
     };
+
+    console.log(NativeModules.RNiBeacon);
     if (!firebase.apps.length) {
       firebase.initializeApp({
         apiKey: 'AIzaSyA-eJKwGNj1qBoGK-6YPh18BOpR555jjs4',
