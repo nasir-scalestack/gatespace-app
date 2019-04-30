@@ -28,6 +28,17 @@ const styles = StyleSheet.create({
   },
 });
 
+function shuffle(a) {
+  var j, x, i;
+  for (i = a.length - 1; i > 0; i--) {
+      j = Math.floor(Math.random() * (i + 1));
+      x = a[i];
+      a[i] = a[j];
+      a[j] = x;
+  }
+  return a;
+}
+
 const region = {
   identifier: 'Gatespace',
   uuid: 'E2C56DB5-DFFB-48D2-B060-D0F5A71096E0'
@@ -170,12 +181,17 @@ class App extends React.Component {
         this.setState({ message: 'beaconsDidRange event' });
         data.beacons.forEach(event => {
           console.log(event)
+          let code = 'none';
+
           if(event.proximity !== "unknown" && (event.proximity === 'near' || event.proximity === 'far' || event.proximity === 'immediate')){
 
             if(event.proximity === 'far'){
               this.setState({
                 showad: true,
                 near: false
+              })
+              firebase.database().ref('game').update({
+                distance: 'far'
               })
             }
             if(event.proximity === 'near' && this.state.showad === true){
@@ -184,6 +200,9 @@ class App extends React.Component {
                 near: true
               })
 
+              firebase.database().ref('game').update({
+                distance: 'near'
+              })
               Alert.alert( 'COME CLOSER TO GET A COUPON',
               'Product discount here',
               [
@@ -197,10 +216,24 @@ class App extends React.Component {
               ],
               {cancelable: false},)
             }
-            if(event.proximity === 'immediate'  && this.state.near === true && this.state.showad === true){
+            if(event.proximity === 'immediate'  && this.state.near === true){
               this.setState({
                 showad: false,
                 near: false
+              })
+              
+              var firstPart = (Math.random() * 46656) | 0;
+              var secondPart = (Math.random() * 46656) | 0;
+              firstPart = ("000" + firstPart.toString(36)).slice(-3);
+              secondPart = ("000" + secondPart.toString(36)).slice(-3);
+              code = firstPart + secondPart;
+
+              const products = ['https://assets.adidas.com/images/w_600,f_auto,q_auto/d4dd2144b22b41bfbbd5a7ff01674bb3_9366/Superstar_Shoes_White_C77153_01_standard.jpg', 'https://m.media-amazon.com/images/G/01/zappos/landing/pages/adidas/Aug18/4368111._CB1533590374_.jpg', 'https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/2/0/201357_01.jpg','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ydiNyA-5CC6Wu6b_nrh0x_Fl979wd0pAaodWBX87kKAKPMcXMA']
+              const choose = shuffle(products)
+              firebase.database().ref('game').update({
+                distance: 'close',
+                image: choose,
+                coupon: code
               })
               Alert.alert( 'CONGRATS HERE IS YOUR COUPON',
               'COUP1095',
@@ -216,7 +249,8 @@ class App extends React.Component {
             })
             firebase.database().ref('events').child(key).update({
               ...event,
-              time: time
+              time: time,
+              code
             })
           }
           // Generate a reference to a new location and add some data using push()
