@@ -9,7 +9,7 @@ import LoginScreen from './screens/LoginScreen';
 import Beacons from 'react-native-beacons-manager';
 import moment from 'moment';
 import { hashCode, deepCopyBeaconsLists } from './utils/helpers';
-import { InAppNotificationProvider } from 'react-native-in-app-notification';
+import { InAppNotificationProvider, withInAppNotification } from 'react-native-in-app-notification';
 
 // uuid of YOUR BEACON (change to yours)
 const UUID = 'E2C56DB5-DFFB-48D2-B060-D0F5A71096E0';
@@ -33,7 +33,7 @@ const region = {
   uuid: 'E2C56DB5-DFFB-48D2-B060-D0F5A71096E0'
 };
 
-export default class withInAppNotification(App) extends React.Component {
+class App extends React.Component {
   // will be set as list of beacons to update state
   _beaconsLists = null;
 
@@ -54,7 +54,7 @@ export default class withInAppNotification(App) extends React.Component {
       isAuthenticationReady: false,
       uuid: UUID,
       identifier: IDENTIFIER,
-      
+      userNear: false,
       // check bluetooth state:
       bluetoothState: '',
   
@@ -168,7 +168,7 @@ export default class withInAppNotification(App) extends React.Component {
       data => {
         this.setState({ message: 'beaconsDidRange event' });
         data.beacons.forEach(event => {
-          if(event.proximity !== "unknown"){
+          if(event.proximity !== "unknown" && (event.proximity === 'near' || event.proximity === 'far' || event.proximity === 'immediate')){
             const time = moment().format(TIME_FORMAT);
             var key = firebase.database().ref('events').push().getKey();
             firebase.database().ref('users').child('user').child('events').update({
@@ -185,31 +185,29 @@ export default class withInAppNotification(App) extends React.Component {
     );
 
     // monitoring events
-    // this.regionDidEnterEvent = Beacons.BeaconsEventEmitter.addListener(
-    //   'regionDidEnter',
-    //   ({ uuid, identifier }) => {
-    //     this.setState({ message: 'regionDidEnter event' });
-    //     console.log('regionDidEnter, data: ', { uuid, identifier });
-    //     const time = moment().format(TIME_FORMAT);
-    //     console.log({ uuid, identifier, time },);
-    //   },
-    // );
+    this.regionDidEnterEvent = Beacons.BeaconsEventEmitter.addListener(
+      'regionDidEnter',
+      ({ uuid, identifier }) => {
+        this.setState({ message: 'regionDidEnter event' });
+        console.log('regionDidEnter, data: ', { uuid, identifier });
+        const time = moment().format(TIME_FORMAT);
+      },
+    );
 
-    // this.regionDidExitEvent = Beacons.BeaconsEventEmitter.addListener(
-    //   'regionDidExit',
-    //   ({ identifier, uuid, minor, major }) => {
-    //     this.setState({ message: 'regionDidExit event' });
-    //     const time = moment().format(TIME_FORMAT);
-
-    //     console.log('regionDidExit, data: ', {
-    //       identifier,
-    //       uuid,
-    //       minor,
-    //       major,
-    //       time
-    //     });
-    //   },
-    // );
+    this.regionDidExitEvent = Beacons.BeaconsEventEmitter.addListener(
+      'regionDidExit',
+      ({ identifier, uuid, minor, major }) => {
+        this.setState({ message: 'regionDidExit event' });
+        const time = moment().format(TIME_FORMAT);
+        console.log('regionDidExit, data: ', {
+          identifier,
+          uuid,
+          minor,
+          major,
+          time
+        });
+      },
+    );
   }
   onAuthStateChanged = user => {
     this.setState({
@@ -273,3 +271,5 @@ export default class withInAppNotification(App) extends React.Component {
     );
   }
 }
+
+export default withInAppNotification(App);
