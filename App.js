@@ -185,7 +185,16 @@ class App extends React.Component {
 
           if(event.proximity !== "unknown" && (event.proximity === 'near' || event.proximity === 'far' || event.proximity === 'immediate')){
 
+            
+            var firstPart = (Math.random() * 46656) | 0;
+            var secondPart = (Math.random() * 46656) | 0;
+            firstPart = ("000" + firstPart.toString(36)).slice(-3);
+            secondPart = ("000" + secondPart.toString(36)).slice(-3);
+            code = firstPart + secondPart;
+
+           
             if(event.proximity === 'far'){
+              
               this.setState({
                 showad: true,
                 near: false
@@ -221,15 +230,9 @@ class App extends React.Component {
                 showad: false,
                 near: false
               })
-              
-              var firstPart = (Math.random() * 46656) | 0;
-              var secondPart = (Math.random() * 46656) | 0;
-              firstPart = ("000" + firstPart.toString(36)).slice(-3);
-              secondPart = ("000" + secondPart.toString(36)).slice(-3);
-              code = firstPart + secondPart;
-
               const products = ['https://assets.adidas.com/images/w_600,f_auto,q_auto/d4dd2144b22b41bfbbd5a7ff01674bb3_9366/Superstar_Shoes_White_C77153_01_standard.jpg', 'https://m.media-amazon.com/images/G/01/zappos/landing/pages/adidas/Aug18/4368111._CB1533590374_.jpg', 'https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/2/0/201357_01.jpg','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ydiNyA-5CC6Wu6b_nrh0x_Fl979wd0pAaodWBX87kKAKPMcXMA']
               const choose = shuffle(products)
+           
               firebase.database().ref('game').update({
                 distance: 'close',
                 image: choose,
