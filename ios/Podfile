@@ -79,8 +79,12 @@ target 'gatespace-app' do
     :path => "../node_modules/expo-sms/ios"
   pod 'EXTaskManager',
     :path => "../node_modules/expo-task-manager/ios"
+ 
   pod 'EXTaskManagerInterface',
     :path => "../node_modules/expo-task-manager-interface/ios"
+    
+  pod 'ReactNativeBeaconsManager',
+    :path => "../node_modules/react-native-beacons-manager"
 
   pod 'React',
     :path => "../node_modules/react-native",
@@ -112,6 +116,7 @@ target 'gatespace-app' do
   pod 'glog',
     :podspec => "../node_modules/react-native/third-party-podspecs/glog.podspec",
     :inhibit_warnings => true
+
 
 
   post_install do |installer|

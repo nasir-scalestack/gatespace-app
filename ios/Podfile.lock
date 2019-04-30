@@ -245,6 +245,8 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
+  - ReactNativeBeaconsManager (1.1.0):
+    - React
   - yoga (0.57.1.React)
 
 DEPENDENCIES:
@@ -301,6 +303,7 @@ DEPENDENCIES:
   - React/RCTText (from `../node_modules/react-native`)
   - React/RCTVibration (from `../node_modules/react-native`)
   - React/RCTWebSocket (from `../node_modules/react-native`)
+  - ReactNativeBeaconsManager (from `../node_modules/react-native-beacons-manager`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -411,6 +414,8 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   React:
     :path: "../node_modules/react-native"
+  ReactNativeBeaconsManager:
+    :path: "../node_modules/react-native-beacons-manager"
   yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -482,8 +487,9 @@ SPEC CHECKSUMS:
   JKBigInteger2: e91672035c42328c48b7dd015b66812ddf40ca9b
   lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
   React: 1fe0eb13d90b625d94c3b117c274dcfd2e760e11
+  ReactNativeBeaconsManager: 186df22d873324226cf15e99f1564a1cbf7fface
   yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
 
-PODFILE CHECKSUM: fa154abb602631085e2a121d4b27f27afc2b5514
+PODFILE CHECKSUM: 128eda7632905fb1d5a94b279ba168395f82abae
 
 COCOAPODS: 1.5.3

@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { Platform, StatusBar, StyleSheet, View, NativeModules } from 'react-native';
+import { DeviceEventEmitter, Platform, StatusBar, StyleSheet, View, NativeModules } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
 import * as firebase from 'firebase';
 import AppNavigator from './navigation/AppNavigator';
@@ -14,6 +14,11 @@ const styles = StyleSheet.create({
   },
 });
 
+const region = {
+  identifier: 'Gatespace',
+  uuid: 'B9407F30-F5F8-466E-AFF9-25556B57FE6D'
+};
+
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -23,7 +28,6 @@ export default class App extends React.Component {
       isAuthenticationReady: false,
     };
 
-    console.log(NativeModules.RNiBeacon);
     if (!firebase.apps.length) {
       firebase.initializeApp({
         apiKey: 'AIzaSyA-eJKwGNj1qBoGK-6YPh18BOpR555jjs4',

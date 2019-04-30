@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		014BCD19CDE448C795AE653A /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F595BD4A7AD54E019F2C0CD1 /* MaterialCommunityIcons.ttf */; };
 		08D0AA8196634A48ACE3CF04 /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A499207125340F8863FDE4C /* Roboto.ttf */; };
@@ -13,10 +12,6 @@
 		1A54ED9E4C2149E681C045C6 /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A272E7B7443461E86475168 /* Roboto_medium.ttf */; };
 		23C41E6C6A834488ACDF3333 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AEEEEB44B8456D80E5054C /* Foundation.ttf */; };
 		2823FB03E6EC48DB9C8D6099 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 748207404A334BE4B03AD9D4 /* Entypo.ttf */; };
-		2A671F182277D82600E1F9EE /* ESSBeaconScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A671F112277D81C00E1F9EE /* ESSBeaconScanner.m */; };
-		2A671F192277D82600E1F9EE /* RNiBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A671F132277D81E00E1F9EE /* RNiBeacon.m */; };
-		2A671F1A2277D82600E1F9EE /* ESSTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A671F142277D81E00E1F9EE /* ESSTimer.m */; };
-		2A671F1B2277D82600E1F9EE /* ESSEddystone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A671F172277D82500E1F9EE /* ESSEddystone.m */; };
 		2FDA8EDE254A470BBBEACF08 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5308A6A523E47C193810129 /* Zocial.ttf */; };
 		44089470DB4744168265B10D /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4EBD9A9AD95444E98DAAD9C /* FontAwesome5_Brands.ttf */; };
 		7037B4BCF06443878550DC49 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22F22556CBCB4BCFAF71EAD9 /* FontAwesome.ttf */; };
@@ -46,14 +41,6 @@
 /* Begin PBXFileReference section */
 		17B69769F253474591E0CA66 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
 		22F22556CBCB4BCFAF71EAD9 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
-		2A671F102277D81B00E1F9EE /* ESSTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESSTimer.h; sourceTree = "<group>"; };
-		2A671F112277D81C00E1F9EE /* ESSBeaconScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSBeaconScanner.m; sourceTree = "<group>"; };
-		2A671F122277D81D00E1F9EE /* RNiBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNiBeacon.h; sourceTree = "<group>"; };
-		2A671F132277D81E00E1F9EE /* RNiBeacon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNiBeacon.m; sourceTree = "<group>"; };
-		2A671F142277D81E00E1F9EE /* ESSTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSTimer.m; sourceTree = "<group>"; };
-		2A671F152277D81F00E1F9EE /* ESSEddystone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESSEddystone.h; sourceTree = "<group>"; };
-		2A671F162277D82100E1F9EE /* ESSBeaconScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESSBeaconScanner.h; sourceTree = "<group>"; };
-		2A671F172277D82500E1F9EE /* ESSEddystone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSEddystone.m; sourceTree = "<group>"; };
 		2C1548D9E4CB1AEFA5CCAE6D /* Pods-gatespace-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gatespace-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gatespace-app/Pods-gatespace-app.debug.xcconfig"; sourceTree = "<group>"; };
 		32B6A6A719EA4CF786C15B57 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		3D6B9D449CCB4CE0A0FD81AF /* libRNiBeacon.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNiBeacon.a; sourceTree = "<group>"; };
@@ -118,21 +105,6 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		2A671F0F2277D7F900E1F9EE /* BeaconManager */ = {
-			isa = PBXGroup;
-			children = (
-				2A671F162277D82100E1F9EE /* ESSBeaconScanner.h */,
-				2A671F112277D81C00E1F9EE /* ESSBeaconScanner.m */,
-				2A671F152277D81F00E1F9EE /* ESSEddystone.h */,
-				2A671F172277D82500E1F9EE /* ESSEddystone.m */,
-				2A671F102277D81B00E1F9EE /* ESSTimer.h */,
-				2A671F142277D81E00E1F9EE /* ESSTimer.m */,
-				2A671F122277D81D00E1F9EE /* RNiBeacon.h */,
-				2A671F132277D81E00E1F9EE /* RNiBeacon.m */,
-			);
-			path = BeaconManager;
-			sourceTree = "<group>";
-		};
 		5B29BC350A332C58878A9F13 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +137,6 @@
 		B56386431DB9693800A0598C /* gatespace-app */ = {
 			isa = PBXGroup;
 			children = (
-				2A671F0F2277D7F900E1F9EE /* BeaconManager */,
 				B56386471DB9693800A0598C /* AppDelegate.h */,
 				B56386481DB9693800A0598C /* AppDelegate.m */,
 				B56386501DB9693800A0598C /* Assets.xcassets */,
@@ -253,6 +224,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = R7JGVRKG2Y;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -396,11 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B56386611DB96A5E00A0598C /* main.m in Sources */,
-				2A671F182277D82600E1F9EE /* ESSBeaconScanner.m in Sources */,
-				2A671F1A2277D82600E1F9EE /* ESSTimer.m in Sources */,
 				B56386491DB9693800A0598C /* AppDelegate.m in Sources */,
-				2A671F192277D82600E1F9EE /* RNiBeacon.m in Sources */,
-				2A671F1B2277D82600E1F9EE /* ESSEddystone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

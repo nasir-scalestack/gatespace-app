@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AC3CF57EFFD13571A30733F8E7E75982"
+               BlueprintIdentifier = "26C3E60C4DD402136417745D1A1AD16E"
                BlueprintName = "Pods-gatespace-app"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libPods-gatespace-app.a">
