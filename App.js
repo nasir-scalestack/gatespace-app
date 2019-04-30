@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { DeviceEventEmitter, Platform, StatusBar, StyleSheet, View, NativeModules } from 'react-native';
+import { Alert, DeviceEventEmitter, Platform, StatusBar, StyleSheet, View, NativeModules } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
 import * as firebase from 'firebase';
 import AppNavigator from './navigation/AppNavigator';
@@ -57,7 +57,8 @@ class App extends React.Component {
       userNear: false,
       // check bluetooth state:
       bluetoothState: '',
-  
+      showad: true,
+      near: false,
       message: '',
     };
 
@@ -168,7 +169,46 @@ class App extends React.Component {
       data => {
         this.setState({ message: 'beaconsDidRange event' });
         data.beacons.forEach(event => {
+          console.log(event)
           if(event.proximity !== "unknown" && (event.proximity === 'near' || event.proximity === 'far' || event.proximity === 'immediate')){
+
+            if(event.proximity === 'far'){
+              this.setState({
+                showad: true,
+                near: false
+              })
+            }
+            if(event.proximity === 'near' && this.state.showad === true){
+              this.setState({
+                showad: false,
+                near: true
+              })
+
+              Alert.alert( 'COME CLOSER TO GET A COUPON',
+              'Product discount here',
+              [
+                {text: 'Redeem coupon', onPress: () => console.log('Ask me later pressed')},
+                {
+                  text: 'Cancel',
+                  onPress: () => console.log('Cancel Pressed'),
+                  style: 'cancel',
+                },
+                {text: 'Redeem coupon', onPress: () => console.log('OK Pressed')},
+              ],
+              {cancelable: false},)
+            }
+            if(event.proximity === 'immediate'  && this.state.near === true && this.state.showad === true){
+              this.setState({
+                showad: false,
+                near: false
+              })
+              Alert.alert( 'CONGRATS HERE IS YOUR COUPON',
+              'COUP1095',
+              [
+                {text: 'USE IT', onPress: () => console.log('OK Pressed')},
+              ],
+              {cancelable: false},)
+            }
             const time = moment().format(TIME_FORMAT);
             var key = firebase.database().ref('events').push().getKey();
             firebase.database().ref('users').child('user').child('events').update({
