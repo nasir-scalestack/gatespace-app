@@ -6,7 +6,6 @@ import { AppRegistry, StyleSheet, View, Text, ListView } from 'react-native';
 import Beacons from 'react-native-beacons-manager';
 import moment from 'moment';
 import { hashCode, deepCopyBeaconsLists } from '../utils/helpers';
-
 // #endregion
 
 // #endregion
@@ -14,7 +13,7 @@ import { hashCode, deepCopyBeaconsLists } from '../utils/helpers';
 // #region constants
 
 // uuid of YOUR BEACON (change to yours)
-const UUID = '23A01AF0-232A-4518-9C0E-323FB773F5EF';
+const UUID = 'E2C56DB5-DFFB-48D2-B060-D0F5A71096E0';
 const IDENTIFIER = 'Sena';
 const TIME_FORMAT = 'HH:mm:ss';
 const EMPTY_BEACONS_LISTS = {

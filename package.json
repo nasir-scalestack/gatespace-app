@@ -19,8 +19,9 @@
     "native-base": "^2.12.1",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
-    "react-navigation": "^3.0.9",
-    "react-native-beacons-manager": "git+https://github.com/MacKentoch/react-native-beacons-manager.git"
+    "react-native-beacons-manager": "git+https://github.com/MacKentoch/react-native-beacons-manager.git",
+    "react-native-in-app-notification": "^3.0.0",
+    "react-navigation": "^3.0.9"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0",
